@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>신다영 스터디 발표</title>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+
+  <!-- 폰트어썸 아이콘 연결 -->
+  <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+  <!-- 내가 하는거 -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger mb-auto" href="#page-top">
+        <span class="d-block d-lg-none">Shin's Study</span>
+        <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
+            src="/images/참외.jpeg" alt="참외롭다" /></span>
+      </a>
+      <button class="btn navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseNav"
+        aria-expanded="false" aria-controls="collapseNav" data-bs-target="#collapseNav" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapseNav">
+        <div class="accordion navbar-nav mb-auto" id="accordionResponsive">
+          <!-- btn- 부트스트랩 -->
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0"><a href="#Bootstrap">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Bootstrap
+                  </button>
+                </a></h2>
+            </div>
+            <!-- 부트스트랩 소메뉴 -->
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionResponsive">
+              <div class="card-body">
+                <ul>
+                  <li><a href="#Bootstrap-theory">Layout 이론</a></li>
+                  <li><a href="#Bootstrap-Ex">몇가지 예제</a></li>
+                  <li><a href="#Bootstrap-idreeding">아이브리딩 클론 코딩</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- btn- 제이쿼리 -->
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0"><a href="#jQuery">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    jQuery
+                  </button>
+                </a></h2>
+            </div>
+            <!-- 제이쿼리 소메뉴 -->
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionResponsive">
+              <div class="card-body">
+                <ul>
+                  <li><a href="#">이론이론</a></li>
+                  <li><a href="#">몇가지 예제</a></li>
+                  <li><a href="#">예제를 곁들인 사이트</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- btn- 뭐하지 -->
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                  data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  이건 뭘 할지 나도 모르겟군
+                </button>
+              </h2>
+            </div>
+            <!-- 뭘하지 소메뉴 -->
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionResponsive">
+              <div class="card-body">
+                <ul>
+                  <li><a href="#">이론이론</a></li>
+                  <li><a href="#">예제가 있겟지 아마도?</a></li>
+                  <li><a href="#">홀로롤롤</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="container-main p-0">
+
+    <!-- 시작 intro -->
+    <div class="start">
+      <div class="resume-section" class="intro">
+        <div class="resume-section-content">
+          <h1 class="mb-0">
+            Shin's
+            <span class="text-primary">Study</span>
+          </h1>
+          <div class="subheading mb-5">
+            21.11.22 부터 공부한 내용은 무엇일까요??
+            <a href="mailto:name@email.com">아 깃허브 연결해야 하는데</a>
+          </div>
+          <ul>
+            <li><a href="#Bootstrap">Bootstrap</a></li>
+            <li><a href="#jQuery">jQuery</a></li>
+            <li><a href="#">그 외엔 뭘까</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 부트스트랩 -->
+    <div class="wrap-bootstrap">
+      <div class="resume-section" id="Bootstrap">
+        <div class="resume-section-content">
+          <h2 class="mb-2 text-primary">Bootstrap</h2>
+          <p class="mb-2">부트스트랩은 트위터에서 사용하는 각종 레이아웃, 버튼, 입력창 등의 디자인을 CSS와 Javascript로 만들어 놓은 것이다. '프레임워크' 라고 하는 것은 재사용이 가능한 요소들이 집합되어 있으며, 정해진 구조와 틀 안에서 이것들이 확장이 가능한 기반 코드로 이루어 짐을 뜻한다.</p>
+          <p class="mb-2">jquery는 라이브러리이고, 부트스트랩은 프레임워크다. 따라서, 우리는 '부트스트랩 프레임워크에서 jquery 라이브러리를 사용할 수 있다.'라고 말 할 수 있다.</p>
+        </div>
+      </div>
+      <!-- 부트- 이론 -->
+      <div class="resume-section B-Theory" id="Bootstrap-theory">
+        <div class="resume-section-content">
+          <h2 class="mb-2">
+            Bootstrap
+            <span class="text-primary">Layout 및 기본 지식</span>
+          </h2>
+          <div class="contain">
+            <h3>.container</h3>
+            <p>부트스트랩은 사이트 콘텐츠를 감싸고 그리드 시스템을 만들 콘테이너 요소가 필요합니다. 컨테이너는 내용을 포함하고 채우고 때로는 내용을 가운데에 맞추는 데 사용됩니다.</p>
+
+            <h5>breakpoint</h5>
+            <p>
+              &lt;div class="container-sm">100% wide until small breakpoint &lt;/div&gt;<br>
+              &lt;div class="container-md">100% wide until medium breakpoint &lt;/div&gt;<br>
+              &lt;div class="container-lg">100% wide until large breakpoint &lt;/div&gt;<br>
+              &lt;div class="container-xl">100% wide until extra large breakpoint &lt;/div&gt;
+            </p>
+            <table class="breakpoint-table table-bordered">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th class="col-auto">Extra small<br>&lt;576px</th>
+                  <th class="col-auto">Small<br>&ge;576px</th>
+                  <th class="col-auto">medium<br>&ge;768px</th>
+                  <th class="col-auto">Large<br>&ge;992px</th>
+                  <th class="col-auto">Extra large<br>&ge;1200px</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="col-auto">.container</th>
+                  <td>100%</td>
+                  <td>540px</td>
+                  <td>720px</td>
+                  <td>960px</td>
+                  <td>1140px</td>
+                </tr>
+                <tr>
+                  <th class="col-auto">.container-sm</th>
+                  <td>100%</td>
+                  <td>540px</td>
+                  <td>720px</td>
+                  <td>960px</td>
+                  <td>1140px</td>
+                </tr>
+                <tr>
+                  <th class="col-auto">.container-md</th>
+                  <td>100%</td>
+                  <td>100%</td>
+                  <td>720px</td>
+                  <td>960px</td>
+                  <td>1140px</td>
+                </tr>
+                <tr>
+                  <th class="col-auto">.container-lg</th>
+                  <td>100%</td>
+                  <td>100%</td>
+                  <td>100%</td>
+                  <td>960px</td>
+                  <td>1140px</td>
+                </tr>
+                <tr>
+                  <th class="col-auto">.container-xl</th>
+                  <td>100%</td>
+                  <td>100%</td>
+                  <td>100%</td>
+                  <td>100%</td>
+                  <td>1140px</td>
+                </tr>
+                <tr>
+                  <th class="col-auto">.container-fluid</th>
+                  <td>100%</td>
+                  <td>100%</td>
+                  <td>100%</td>
+                  <td>100%</td>
+                  <td>100%</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+          <div class="z-index">
+            <h3>Z-index</h3>
+            <p>z-index는 Bootstrap 그리드 시스템의 일부는 아니지만 구성 요소가 서로 중첩되고 상호 작용하는 방식에서 중요한 역할을 담당합니다.</p>
+            <p>
+              $zindex-dropdown: 1000;<br>
+              $zindex-sticky: 1020;<br>
+              $zindex-fixed: 1030;<br>
+              $zindex-modal-backdrop: 1040;<br>
+              $zindex-offcanvas: 1050;<br>
+              $zindex-modal: 1060;<br>
+              $zindex-popover: 1070;<br>
+              $zindex-tooltip: 1080;
+            </p>
+            <p>컴포넌트 (예: 입력 그룹의 버튼 및 입력) 내에서 겹치는 테두리를 처리하기 위해 기본, 호버, 활성 상태에 대해 1, 2, 3의 낮은 한 자리 z-index 값을 사용합니다.
+              hover/focus/active에서 우리는 형제 요소 위에 테두리를 표시하기 위해 더 높은 z-index 값으로 특정 요소를 맨 앞으로 가져옵니다.</p>
+          </div>
+          <div class="grid">
+            <h3>Grid</h3>
+            <p>Bootstrap의 그리드 시스템은 일련의 컨테이너, 행, 열을 사용하여 콘텐츠를 레이아웃하고 정렬합니다. flexbox로 빌드되었으며 완전한 반응형입니다.</p>
+            <h6>Grid-option</h6>
+            <ul>
+              <li>Extra small (xs)</li>
+              <li>Small (sm)</li>
+              <li>Medium (md)</li>
+              <li>Large (lg)</li>
+              <li>Extra large (xl)</li>
+              <li>Extra extra large (xxl)</li>
+            </ul>
+            <table class="breakpoint-table table-bordered">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th class="col-auto">Extra small<br>&lt;576px</th>
+                  <th class="col-auto">Small<br>&ge;576px</th>
+                  <th class="col-auto">medium<br>&ge;768px</th>
+                  <th class="col-auto">Large<br>&ge;992px</th>
+                  <th class="col-auto">Extra large<br>&ge;1200px</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="col-auto">Max container width</th>
+                  <td>none (auto)</td>
+                  <td>540px</td>
+                  <td>720px</td>
+                  <td>960px</td>
+                  <td>1140px</td>
+                </tr>
+                <tr>
+                  <th class="col-auto">Class prefix</th>
+                  <td class="text-info">.col-</td>
+                  <td class="text-info">.col-sm</td>
+                  <td class="text-info">.col-md</td>
+                  <td class="text-info">.col-lg</td>
+                  <td class="text-info">.col-xl</td>
+                </tr>
+                <tr>
+                  <th># of-colums</th>
+                  <td colspan="5">12</td>
+                </tr>
+                <tr>
+                  <th>Gutter width</th>
+                  <td colspan="5">30px (15px on each side of a column)</td>
+                </tr>
+                <tr>
+                  <th>Nestable 중첩</th>
+                  <td colspan="5">Yes</td>
+                </tr>
+                <tr>
+                  <th>Column ordering 열 정렬</th>
+                  <td colspan="5">Yes</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="equal-width">
+            <h3>동일 너비</h3>
+            <div class="container grid-width">
+              <div class="row">
+                <div class="col">1 / 2</div>
+                <div class="col">2 / 2</div>
+              </div>
+              <div class="row">
+                <div class="col">1 / 3</div>
+                <div class="col">2 / 3</div>
+                <div class="col">3 / 3</div>
+              </div>
+            </div>
+            <p class="mt-4 mb-0">하나의 너비값을 기준으로 동일한 너비 적용</p>
+            <div class="container grid-width mb-2">
+              <div class="row">
+                <div class="col">col</div>
+                <div class="col">col</div>
+                <div class="w-100"></div>
+                <div class="col">col</div>
+                <div class="col">col</div>
+              </div>
+            </div>
+            <div class="container grid-width">
+              <div class="row">
+                <div class="col">
+                  1 of 3
+                </div>
+                <div class="col-6">
+                  2 of 3 (wider)
+                </div>
+                <div class="col">
+                  3 of 3
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  1 of 3
+                </div>
+                <div class="col-5">
+                  2 of 3 (wider)
+                </div>
+                <div class="col">
+                  3 of 3
+                </div>
+              </div>
+            </div>
+            <p class="mt-4 mb-0">가변 너비 콘텐츠</p>
+            <p>col-{breakpoint}-auto 클래스를 사용하여 콘텐츠의 자연스러운 너비에 따라 열의 크기를 조정합니다.</p>
+            <div class="container grid-width">
+              <div class="row justify-content-md-center">
+                <div class="col col-lg-2">
+                  1 of 3
+                </div>
+                <div class="col-md-auto">
+                  Variable width content
+                </div>
+                <div class="col col-lg-2">
+                  3 of 3
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  1 of 3
+                </div>
+                <div class="col-md-auto">
+                  Variable width content
+                </div>
+                <div class="col col-lg-2">
+                  3 of 3
+                </div>
+              </div>
+            </div>
+            <h3>Gutters 거터</h3>
+            <div class="container">
+              거터는 열 사이의 가로 패딩으로, Bootstrap 그리드 시스템에서 콘텐츠의 간격을 맞추고 정렬하는 데에 사용됩니다.
+            </div>
+            
+          </div>
+          <div class="row-columns">
+            <h3>Row columns</h3>
+            <p>반응형 .row-cols-* 클래스를 사용하여 콘텐츠와 레이아웃을 가장 잘 렌더링하는 열 수를 빠르게 설정하세요.</p>
+            <p>이러한 행 열 클래스를 사용하여 기본 그리드 레이아웃을 빠르게 생성하거나 카드 레이아웃을 제어하고 필요할 때 열 수준에서 재정의할 수 있습니다.</p>
+            <div class="container">
+              <div class="row row-cols-2">
+                <div class="col">Column</div>
+                <div class="col">Column</div>
+                <div class="col">Column</div>
+                <div class="col">Column</div>
+              </div>
+            </div>
+            <div class="container mt-2">
+              <div class="row row-cols-3">
+                <div class="col">Column</div>
+                <div class="col">Column</div>
+                <div class="col">Column</div>
+                <div class="col">Column</div>
+              </div>
+            </div>
+            <div class="container mt-2">
+              <div class="row row-cols-4">
+                <div class="col">Column</div>
+                <div class="col">Column</div>
+                <div class="col-6">col-6</div>
+                <div class="col">Column</div>
+              </div>
+            </div>
+            <div class="container mt-2">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                <div class="col">row-cols-1</div>
+                <div class="col">일반(가로칸) 1줄</div>
+                <div class="col">row-cols-sm-2</div>
+                <div class="col">sm 사이즈일땐 2줄</div>
+                <div class="col">row-cols-md-4</div>
+                <div class="col">md 사이즈일땐 4줄</div>
+              </div>
+            </div>
+            <div class="container mt-2">
+              <p class="mt-1 mb-0">대충은 알겠는데 정확히 왜 줄이 2,3개로 늘어나는지 모르겠다,,, 나중에 좀 더 알아보기!!</p>
+              <div class="row row-cols-2 row-cols-lg-3">
+                <div class="col">Column</div>
+                <div class="col">Column</div>
+                <div class="col">Column</div>
+                <div class="col">Column</div>
+                <div class="col">Column</div>
+                <div class="col">Column</div>
+                <div class="col-4 col-lg-2">Column</div>
+                <div class="col-4 col-lg-2">Column</div>
+                <div class="col-4 col-lg-2">Column</div>
+                <div class="col-4 col-lg-2">Column</div>
+                <div class="col-4 col-lg-2">Column</div>
+                <div class="col-4 col-lg-2">Column</div>
+              </div>
+            </div>
+          </div>
+          <div class="alignment">
+            <h3>Alignment</h3>
+            <h5>Vertical alignment</h5>
+            <div class="container alignment">
+              <div class="row col-align">
+                <div class="col align-self-start">
+                  col align-self-start
+                </div>
+                <div class="col align-self-center">
+                  col align-self-center
+                </div>
+                <div class="col align-self-end">
+                  col align-self-end
+                </div>
+              </div>
+            </div>
+            <div class="container alignment mt-2">
+              <div class="row justify-content-start">
+                <div class="col-4">
+                  row
+                </div>
+                <div class="col-4">
+                  justify-content-start
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-4">
+                  row
+                </div>
+                <div class="col-4">
+                  justify-content-center
+                </div>
+              </div>
+              <div class="row justify-content-end">
+                <div class="col-4">
+                  row
+                </div>
+                <div class="col-4">
+                  justify-content-end
+                </div>
+              </div>
+              <div class="row justify-content-around">
+                <div class="col-4">
+                  row
+                </div>
+                <div class="col-4">
+                  justify-content-around
+                </div>
+              </div>
+              <div class="row justify-content-between">
+                <div class="col-4">
+                  row
+                </div>
+                <div class="col-4">
+                  justify-content-between
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="no-gutters">
+            <h3>No Gutters</h3>
+            <div class="container">
+              <p class="mt-1 mb-0">no gutters</p>
+              <div class="row no-gutters">
+                <div class="col-sm-6 col-md-8">.col-sm-6 .col-md-8 (안에 마진 적용 X)</div>
+                <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+              </div>
+              <p class="mt-1 mb-0">normal row</p>
+              <div class="row">
+                <div class="col-sm-6 col-md-8">.col-sm-6 .col-md-8 (안에 마진 적용 O)</div>
+                <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+              </div>
+            </div>
+          </div>
+          <div class="Column m-3">
+            <h3>Column</h3>
+            <h5>Column wrapping</h5>
+            <div class="container">
+              <div class="row">
+                <div class="col-9">.col-9<br>9 + 4 = 13 &gt; 12</div>
+                <div class="col-4">.col-4<br>합이 12 보다 크면 자동으로 내려감.</div>
+                <div class="col-6">.col-6<br>다른 행이랑 새 열을 만듦</div>
+              </div>
+            </div>
+            <h5 class="mt-2">Column breaking</h5>
+            <div class="container">
+              <div class="row breaking">
+                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+                <!-- 행 자르고 다음 줄 만들기 -->
+                <div class="w-100"></div>
+                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+                <!-- Force next columns to break to new line -->
+                <div class="w-100"></div>
+                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+                <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+              </div>
+            </div>
+            <h5 class="mt-2">Offsetting column</h5>
+            <p class="m-0">.col-md-XX 에서 XX를 기준으로 .offset-md-YY값의 YY만큼 공간이 생긴다.</p>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">.col-md-4</div>
+                <div class="col-md-4 offset-md-4">.col-md-4 .offset-md-4</div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">.col-md-4</div>
+                <div class="col-md-4 offset-md-2">.col-md-4 .offset-md-2</div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+                <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 부트- 예제 -->
+      <div class="resume-section Bootstrap" id="Bootstrap-Ex">
+        <div class="resume-section-content">
+          <h2 class="mb-0">Bootstrap 예제 연습</h2>
+          <div class="subheading mb-5">
+            이게 텅텅구리일리 없어!!!
+            <a href="mailto:name@email.com">아 깃허브 연결해야 하는데</a>
+          </div>
+          <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high
+            level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the
+            overall value proposition.</p>
+        </div>
+      </div>
+      <!-- 부트 - 아이브리딩 -->
+      <div class="resume-section Bootstrap" id="Bootstrap-idreeding">
+        <div class="resume-section-content">
+          
+        </div>
+      </div>
+    </div>
+    
+    <div class="wrap-jQury">
+      <div class="resume-section" id="wrap-jQury">
+        <div class="resume-section-content">
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
