@@ -1,0 +1,580 @@
+<div class="resume-section" id="Bootstrap">
+	<div class="resume-section-content">
+		<h2 class="mb-2 text-primary">Bootstrap</h2>
+		<p class="mb-2">부트스트랩은 트위터에서 사용하는 각종 레이아웃, 버튼, 입력창 등의 디자인을 CSS와 Javascript로 만들어 놓은 것이다. '프레임워크' 라고 하는 것은 재사용이 가능한 요소들이 집합되어 있으며, 정해진 구조와 틀 안에서 이것들이 확장이 가능한 기반 코드로 이루어 짐을 뜻한다.</p>
+		<p class="mb-2">jquery는 라이브러리이고, 부트스트랩은 프레임워크다. 따라서, 우리는 '부트스트랩 프레임워크에서 jquery 라이브러리를 사용할 수 있다.'라고 말 할 수 있다.</p>
+		<p class="mt-5">이 페이지에 사용된 부트스트랩은 v4.6 입니다.</p>
+		<!-- <p class="m-0">css link: "https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"</p>
+		<p class="m-0">script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"</p> -->
+	</div>
+</div>
+<!-- 부트- 이론 -->
+<div class="resume-section B-Theory" id="Bootstrap-theory">
+	<div class="resume-section-content">
+		<h2 class="mb-2">
+			Bootstrap
+			<span class="text-primary">Layout 및 기본 지식</span>
+		</h2>
+		<div class="contain">
+			<h3>.container</h3>
+			<p>부트스트랩은 사이트 콘텐츠를 감싸고 그리드 시스템을 만들 콘테이너 요소가 필요합니다. 컨테이너는 내용을 포함하고 채우고 때로는 내용을 가운데에 맞추는 데 사용됩니다.</p>
+
+			<h5>breakpoint</h5>
+			<p>
+				&lt;div class="container-sm">100% wide until small breakpoint &lt;/div&gt;<br>
+				&lt;div class="container-md">100% wide until medium breakpoint &lt;/div&gt;<br>
+				&lt;div class="container-lg">100% wide until large breakpoint &lt;/div&gt;<br>
+				&lt;div class="container-xl">100% wide until extra large breakpoint &lt;/div&gt;
+			</p>
+			<table class="breakpoint-table table-bordered">
+				<thead>
+					<tr>
+						<th></th>
+						<th class="col-auto">Extra small<br>&lt;576px</th>
+						<th class="col-auto">Small<br>&ge;576px</th>
+						<th class="col-auto">medium<br>&ge;768px</th>
+						<th class="col-auto">Large<br>&ge;992px</th>
+						<th class="col-auto">Extra large<br>&ge;1200px</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th class="col-auto">.container</th>
+						<td>100%</td>
+						<td>540px</td>
+						<td>720px</td>
+						<td>960px</td>
+						<td>1140px</td>
+					</tr>
+					<tr>
+						<th class="col-auto">.container-sm</th>
+						<td>100%</td>
+						<td>540px</td>
+						<td>720px</td>
+						<td>960px</td>
+						<td>1140px</td>
+					</tr>
+					<tr>
+						<th class="col-auto">.container-md</th>
+						<td>100%</td>
+						<td>100%</td>
+						<td>720px</td>
+						<td>960px</td>
+						<td>1140px</td>
+					</tr>
+					<tr>
+						<th class="col-auto">.container-lg</th>
+						<td>100%</td>
+						<td>100%</td>
+						<td>100%</td>
+						<td>960px</td>
+						<td>1140px</td>
+					</tr>
+					<tr>
+						<th class="col-auto">.container-xl</th>
+						<td>100%</td>
+						<td>100%</td>
+						<td>100%</td>
+						<td>100%</td>
+						<td>1140px</td>
+					</tr>
+					<tr>
+						<th class="col-auto">.container-fluid</th>
+						<td>100%</td>
+						<td>100%</td>
+						<td>100%</td>
+						<td>100%</td>
+						<td>100%</td>
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+		<div class="z-index">
+			<h3>Z-index</h3>
+			<p>z-index는 Bootstrap 그리드 시스템의 일부는 아니지만 구성 요소가 서로 중첩되고 상호 작용하는 방식에서 중요한 역할을 담당합니다.</p>
+			<p>
+				$zindex-dropdown: 1000;<br>
+				$zindex-sticky: 1020;<br>
+				$zindex-fixed: 1030;<br>
+				$zindex-modal-backdrop: 1040;<br>
+				$zindex-offcanvas: 1050;<br>
+				$zindex-modal: 1060;<br>
+				$zindex-popover: 1070;<br>
+				$zindex-tooltip: 1080;
+			</p>
+			<p>컴포넌트 (예: 입력 그룹의 버튼 및 입력) 내에서 겹치는 테두리를 처리하기 위해 기본, 호버, 활성 상태에 대해 1, 2, 3의 낮은 한 자리 z-index 값을 사용합니다.
+				hover/focus/active에서 우리는 형제 요소 위에 테두리를 표시하기 위해 더 높은 z-index 값으로 특정 요소를 맨 앞으로 가져옵니다.</p>
+		</div>
+		<div class="grid">
+			<h3>Grid</h3>
+			<p>Bootstrap의 그리드 시스템은 일련의 컨테이너, 행, 열을 사용하여 콘텐츠를 레이아웃하고 정렬합니다. flexbox로 빌드되었으며 완전한 반응형입니다.</p>
+			<h6>Grid-option</h6>
+			<ul>
+				<li>Extra small (xs)</li>
+				<li>Small (sm)</li>
+				<li>Medium (md)</li>
+				<li>Large (lg)</li>
+				<li>Extra large (xl)</li>
+				<li>Extra extra large (xxl)</li>
+			</ul>
+			<table class="breakpoint-table table-bordered">
+				<thead>
+					<tr>
+						<th></th>
+						<th class="col-auto">Extra small<br>&lt;576px</th>
+						<th class="col-auto">Small<br>&ge;576px</th>
+						<th class="col-auto">medium<br>&ge;768px</th>
+						<th class="col-auto">Large<br>&ge;992px</th>
+						<th class="col-auto">Extra large<br>&ge;1200px</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th class="col-auto">Max container width</th>
+						<td>none (auto)</td>
+						<td>540px</td>
+						<td>720px</td>
+						<td>960px</td>
+						<td>1140px</td>
+					</tr>
+					<tr>
+						<th class="col-auto">Class prefix</th>
+						<td class="text-info">.col-</td>
+						<td class="text-info">.col-sm</td>
+						<td class="text-info">.col-md</td>
+						<td class="text-info">.col-lg</td>
+						<td class="text-info">.col-xl</td>
+					</tr>
+					<tr>
+						<th># of-colums</th>
+						<td colspan="5">12</td>
+					</tr>
+					<tr>
+						<th>Gutter width</th>
+						<td colspan="5">30px (15px on each side of a column)</td>
+					</tr>
+					<tr>
+						<th>Nestable 중첩</th>
+						<td colspan="5">Yes</td>
+					</tr>
+					<tr>
+						<th>Column ordering 열 정렬</th>
+						<td colspan="5">Yes</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="equal-width">
+			<h3>동일 너비</h3>
+			<div class="container grid-width">
+				<div class="row">
+					<div class="col">1 / 2</div>
+					<div class="col">2 / 2</div>
+				</div>
+				<div class="row">
+					<div class="col">1 / 3</div>
+					<div class="col">2 / 3</div>
+					<div class="col">3 / 3</div>
+				</div>
+			</div>
+			<p class="mt-4 mb-0">하나의 너비값을 기준으로 동일한 너비 적용</p>
+			<div class="container grid-width mb-2">
+				<div class="row">
+					<div class="col">col</div>
+					<div class="col">col</div>
+					<div class="w-100"></div>
+					<div class="col">col</div>
+					<div class="col">col</div>
+				</div>
+			</div>
+			<div class="container grid-width">
+				<div class="row">
+					<div class="col">
+						1 of 3
+					</div>
+					<div class="col-6">
+						2 of 3 (wider)
+					</div>
+					<div class="col">
+						3 of 3
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						1 of 3
+					</div>
+					<div class="col-5">
+						2 of 3 (wider)
+					</div>
+					<div class="col">
+						3 of 3
+					</div>
+				</div>
+			</div>
+			<p class="mt-4 mb-0">가변 너비 콘텐츠</p>
+			<p>col-{breakpoint}-auto 클래스를 사용하여 콘텐츠의 자연스러운 너비에 따라 열의 크기를 조정합니다.</p>
+			<div class="container grid-width">
+				<div class="row justify-content-md-center">
+					<div class="col col-lg-2">
+						1 of 3
+					</div>
+					<div class="col-md-auto">
+						Variable width content
+					</div>
+					<div class="col col-lg-2">
+						3 of 3
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						1 of 3
+					</div>
+					<div class="col-md-auto">
+						Variable width content
+					</div>
+					<div class="col col-lg-2">
+						3 of 3
+					</div>
+				</div>
+			</div>
+			<h3>Gutters 거터</h3>
+			<div class="container">
+				거터는 열 사이의 가로 패딩으로, Bootstrap 그리드 시스템에서 콘텐츠의 간격을 맞추고 정렬하는 데에 사용됩니다.
+			</div>
+			
+		</div>
+		<div class="row-columns">
+			<h3>Row columns</h3>
+			<p>반응형 .row-cols-* 클래스를 사용하여 콘텐츠와 레이아웃을 가장 잘 렌더링하는 열두 수를 빠르게 설정하세요.</p>
+			<p>이러한 행 열 클래스를 사용하여 기본 그리드 레이아웃을 빠르게 생성하거나 카드 레이아웃을 제어하고 필요할 때 열 수준에서 재정의할 수 있습니다.</p>
+			<div class="container">
+				<div class="row row-cols-2">
+					<div class="col">감싸는 row가</div>
+					<div class="col">row-cols-2</div>
+					<div class="col">내부의 col은</div>
+					<div class="col">그냥 col</div>
+				</div>
+			</div>
+			<div class="container mt-2">
+				<div class="row row-cols-3">
+					<div class="col">감싸는 row가</div>
+					<div class="col">row-cols-3</div>
+					<div class="col">내부의 col은</div>
+					<div class="col">그냥 col</div>
+				</div>
+			</div>
+			<div class="container mt-2">
+				<div class="row row-cols-4">
+					<div class="col">감싸는 row가</div>
+					<div class="col">row-col-4</div>
+					<div class="col-6">이것만 col col-6</div>
+					<div class="col">그 외는 col</div>
+				</div>
+			</div>
+			<div class="container mt-2">
+				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+					<div class="col">row-cols-1</div>
+					<div class="col">일반(가로칸) 1줄</div>
+					<div class="col">row-cols-sm-2</div>
+					<div class="col">sm 사이즈일땐 2줄</div>
+					<div class="col">row-cols-md-4</div>
+					<div class="col">md 사이즈일땐 4줄</div>
+				</div>
+			</div>
+			<div class="container mt-2">
+				<p class="mt-1 mb-0">row class = row-cols-2 row-cols-lg-3</p>
+				<div class="row row-cols-2 row-cols-lg-3">
+					<div class="col">그냥 col</div>
+					<div class="col">그냥 col</div>
+					<div class="col">그냥 col</div>
+					<div class="col">그냥 col</div>
+					<div class="col">그냥 col</div>
+					<div class="col">그냥 col</div>
+					<div class="col-4 col-lg-2">col-4 col-lg-2</div>
+					<div class="col-4 col-lg-2">col-4 col-lg-2</div>
+					<div class="col-4 col-lg-2">col-4 col-lg-2</div>
+					<div class="col-4 col-lg-2">col-4 col-lg-2</div>
+					<div class="col-4 col-lg-2">col-4 col-lg-2</div>
+					<div class="col-4 col-lg-2">col-4 col-lg-2</div>
+				</div>
+			</div>
+		</div>
+		<div class="alignment">
+			<h3>Alignment</h3>
+			<h5>Vertical alignment</h5>
+			<div class="container alignment">
+				<div class="row col-align">
+					<div class="col align-self-start">
+						col align-self-start
+					</div>
+					<div class="col align-self-center">
+						col align-self-center
+					</div>
+					<div class="col align-self-end">
+						col align-self-end
+					</div>
+				</div>
+			</div>
+			<div class="container alignment mt-2">
+				<div class="row justify-content-start">
+					<div class="col-4">
+						row
+					</div>
+					<div class="col-4">
+						justify-content-start
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-4">
+						row
+					</div>
+					<div class="col-4">
+						justify-content-center
+					</div>
+				</div>
+				<div class="row justify-content-end">
+					<div class="col-4">
+						row
+					</div>
+					<div class="col-4">
+						justify-content-end
+					</div>
+				</div>
+				<div class="row justify-content-around">
+					<div class="col-4">
+						row
+					</div>
+					<div class="col-4">
+						justify-content-around
+					</div>
+				</div>
+				<div class="row justify-content-between">
+					<div class="col-4">
+						row
+					</div>
+					<div class="col-4">
+						justify-content-between
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="no-gutters">
+			<h3>No Gutters</h3>
+			<div class="container">
+				<p class="mt-1 mb-0">no gutters</p>
+				<div class="row no-gutters">
+					<div class="col-sm-6 col-md-8">.col-sm-6 .col-md-8 (안에 마진 적용 X)</div>
+					<div class="col-6 col-md-4">.col-6 .col-md-4</div>
+				</div>
+				<p class="mt-1 mb-0">normal row</p>
+				<div class="row">
+					<div class="col-sm-6 col-md-8">.col-sm-6 .col-md-8 (안에 마진 적용 O)</div>
+					<div class="col-6 col-md-4">.col-6 .col-md-4</div>
+				</div>
+			</div>
+		</div>
+		<div class="Column m-3">
+			<h3>Column</h3>
+			<h5>Column wrapping</h5>
+			<div class="container">
+				<div class="row">
+					<div class="col-9">.col-9<br>9 + 4 = 13 &gt; 12</div>
+					<div class="col-4">.col-4<br>합이 12 보다 크면 자동으로 내려감.</div>
+					<div class="col-6">.col-6<br>다른 행이랑 새 열을 만듦</div>
+				</div>
+			</div>
+			<h5 class="mt-2">Column breaking</h5>
+			<div class="container">
+				<div class="row breaking">
+					<div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+					<div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+					<div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+					<!-- 행 자르고 다음 줄 만들기 -->
+					<div class="w-100"></div>
+					<div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+					<!-- Force next columns to break to new line -->
+					<div class="w-100"></div>
+					<div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+					<div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+				</div>
+			</div>
+			<h5 class="mt-2">Offsetting column</h5>
+			<p class="m-0">.col-md-XX 에서 XX를 기준으로 .offset-md-YY값의 YY만큼 공간이 생긴다.</p>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">.col-md-4</div>
+					<div class="col-md-4 offset-md-4">.col-md-4 .offset-md-4</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">.col-md-4</div>
+					<div class="col-md-4 offset-md-2">.col-md-4 .offset-md-2</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+					<div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 부트- 예제 -->
+<div class="resume-section Bootstrap" id="Bootstrap-Ex">
+	<div class="resume-section-content">
+		<h2 class="mb-0">Bootstrap <span class="text-primary">예제 연습</span></h2>
+		<div class="container">
+			<!--<div id="pageEx">-->
+				<div class="nav-area">
+					<nav class="navbar navbar-expand-lg navbar-light bg-light">
+						<!-- 로고 css로 값 주기 -->
+						<a class="navbar-brand" href="#"><span class="logo badge-pill badge-primary mr-2">S</span>Shin's study</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+					
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav mr-auto">
+								<li class="nav-item active">
+									<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Menu1</a>
+									<ul>
+										<li><a href="#">inner-menu</a></li>
+										<li><a href="#">inner-menu</a></li>
+										<li><a href="#">inner-menu</a></li>
+										<li><a href="#">inner-menu</a></li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Menu2</a>
+									<ul>
+										<li><a href="#">inner-menu</a></li>
+										<li><a href="#">inner-menu</a></li>
+										<li><a href="#">inner-menu</a></li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Menu3</a>
+									<ul>
+										<li><a href="#">inner-menu</a></li>
+										<li><a href="#">inner-menu</a></li>
+										<li><a href="#">inner-menu</a></li>
+										<li><a href="#">inner-menu</a></li>
+										<li><a href="#">inner-menu</a></li>
+									</ul>
+								</li>
+							</ul>
+							<form class="form-inline my-2 my-lg-0">
+								<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+								<button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+							</form>
+						</div>
+					</nav>
+				</div>
+				
+				<div class="main-area">
+					<div class="main-banner"></div>
+					<div class="container-Ex">
+						<div class="row">
+							<div class="col-3">
+								<div class="card">
+									<img src="/images/card.jpeg" class="card-img-top" alt="beach">
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<a href="#" class="btn btn-secondary">More</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="card">
+									<img src="/images/card.jpeg" class="card-img-top" alt="beach">
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<a href="#" class="btn btn-secondary">More</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="card">
+									<img src="/images/card.jpeg" class="card-img-top" alt="beach">
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<a href="#" class="btn btn-secondary">More</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="card">
+									<img src="/images/card.jpeg" class="card-img-top" alt="beach">
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<a href="#" class="btn btn-secondary">More</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row mt-5">
+							<div class="main-text col-md-6">
+								<h2 class="mb-2">Head title whatever</h2>
+								<h6 class="mb-4">얼마나 눈에 방황하여도. 몸이 끓는 구하지 위하여서.</h6>
+								<p>우리는 품으며, 만물은 미묘한 커다란 못하다 것이다. 그들에게 풀밭에 설레는 이상을 목숨을 새 커다란 피고 있으랴? 용감하고 기관과 없으면 힘차게 가치를 속에 위하여 어디 힘있다. 하여도 설레는 무엇을 있으며, 스며들어 꽃 않는 대중을 옷을 철환하였는가? 가는 꾸며 이상이 불러 어디 바이며, 끓는 곳이 가장 사막이다. 이상의 사라지지 얼음이 살았으며, 영락과 약동하다. 더운지라 때에, 피가 낙원을 있는 이상의 아름다우냐? 없는 할지니, 따뜻한 이것이야말로 설산에서 것이다. 구하지 동산에는 노년에게서 힘있다. 청춘 평화스러운 피어나는 이는 안고, 원대하고, 약동하다. 발휘하기 역사를 부패를 가는 아니한 청춘의 우리 착목한는 쓸쓸하랴?</p>
+								<p>위하여, 싹이 못하다 청춘이 없으면 칼이다. 실현에 낙원을 수 피고 있으랴? 천자만홍이 구할 얼음에 타오르고 역사를 것이다. 피는 그림자는 새가 낙원을 평화스러운 때문이다. 얼마나 눈에 방황하여도, 피다. 몸이 끓는 구하지 위하여서 위하여서, 풀이 그들의 부패뿐이다. 더운지라 군영과 굳세게 충분히 같이, 두기 철환하였는가? 용감하고 할지니, 노래하며 말이다. 희망의 소리다.이것은 맺어, 피고, 같은 운다. 생명을 소담스러운 품으며, 봄바람이다.</p>
+								<a href="#" class="btn btn-secondary">More Details</a>
+							</div>
+							<div class="main-figure col-md-3">
+								<h5>Figure title</h5>
+								<div class="row">
+									<div class="wrap-img col-md-3"><img src="/images/참외.jpeg" alt="참외"></div>
+									<p class="text col-md-9">같지 것은 오직 어디 우리 위하여서 위하여서. 지혜는 같이.</p>
+								</div>
+								<div class="row">
+									<div class="wrap-img col-md-3"><img src="/images/자두.png" alt="자두"></div>
+									<p class="text col-md-9">눈에 있으며, 든 위하여서, 찬미를 위하여서 사막이다. 이상은 크고 소금이라 바이며.</p>
+								</div>
+								<div class="row">
+									<div class="wrap-img col-md-3"><img src="/images/사과.jpeg" alt="사과"></div>
+									<p class="text col-md-9">찬미를 방황하여도, 장식하는 예수는 우리의 있다. 희망의 설레는 위하여서, 모래뿐일 듣는다.</p>
+								</div>
+								<div class="row">
+									<div class="wrap-img col-md-3"><img src="/images/배추.jpeg" alt="배추"></div>
+									<p class="text col-md-9">있는 사는가 위하여서 사랑의 인생의 너의 속에서 것이다. 소리다.이것은 얼음 온갖 위하여.</p>
+								</div>
+							</div>
+							<div class="main-link col-md-3 row">
+								<div class="wrap-link">
+									<h5>link title 1</h5>
+									<a href="#">Tristique sagittis magna</a>
+									<a href="#">elementum sagittis</a>
+									<a href="#">nunc mattis enim ut tortor at tellus</a>
+									<a href="#">nec feugiat nisl.</a>
+									<a href="#">Aenean et tortor at risus</a>
+								</div>
+								<div class="wrap-link">
+									<h5>link title 2</h5>
+									<a href="#">Tristique magnamagna nunc</a>
+									<a href="#">elementum sagittis</a>
+									<a href="#">nunc mattis enim enim ut tellus</a>
+									<a href="#">nec feugiat nisl.</a>
+									<a href="#">Aenean et nisl tortor at risus</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!--</div>-->
+		</div>
+
+		<h2 class="iB"><span class="text-primary">iBREEDING</span> clone coding</h2>
+		<div style="width: 60%; font-size: 1.5rem;"><a href="/ibreeding/index.html" class="float-right">사이트 바로가기 &rarr;</a></div>
+		
+	</div>
+</div>
+		
