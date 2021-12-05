@@ -72,8 +72,27 @@
     .container-main .wrap-bootstrap .resume-section .resume-section-content .container .main-area .container-Ex .row .main-figure .row .wrap-img img {
       width: 180%;
       margin-left: -20px; }
+      @media (max-width: 768px) {
+        .container-main .wrap-bootstrap .resume-section .resume-section-content .container .main-area .container-Ex .row .main-figure .row .wrap-img img {
+          width: 100%;
+          margin-left: 0; } }
 .container-main .wrap-bootstrap .resume-section .resume-section-content .container .main-area .container-Ex .row .main-link a {
   display: inline-block;
   padding: 0.125rem 0; }
+.container-main .start .row img {
+  width: 80%; }
+.container-main .wrap-chart canvas {
+  width: 100%; }
+.container-main .wrap-json .wrap-swiper .swiper {
+  width: 18.75rem;
+  height: 18.75rem; }
+  .container-main .wrap-json .wrap-swiper .swiper .swiper-slide {
+    background-position: center;
+    background-size: cover; }
+    .container-main .wrap-json .wrap-swiper .swiper .swiper-slide img {
+      display: block;
+      width: 18.75rem; }
+    .container-main .wrap-json .wrap-swiper .swiper .swiper-slide h6 {
+      margin-top: 15px; }
 
 /*# sourceMappingURL=style.css.map */
