@@ -1,0 +1,67 @@
+<div class="resume-section" id="Chart">
+	<div class="resume-section-content">
+		<h2 class="mb-2 text-primary">Chart.js</h2>
+		<p class="mb-2">차트차트 소개소개 설명설명</p>
+		<p class="mb-2">....</p>
+		<p class="mt-5">이 페이지에 사용된 chart.js는 v2.5 입니다.</p>
+	</div>
+</div>
+
+<!-- 차트- 이론 & 예제 -->
+<div class="resume-section" id="Chart-theory">
+	<div class="resume-section-content">
+		<h2 class="mb-2">
+			library-
+			<span class="text-primary">Chart.js</span>
+		</h2>
+		<div class="container">
+			<h2>Chart.js 란</h2>
+			<p>블라블라</p>
+	
+			<div class="wrap-grid">
+				<h3>그리드 선 바꾸기</h3>
+				<p>그리드 선 관련 옵션들은 <mark>모두 gridLines</mark> 키에 속한 척도 옵션 아래 중첩되어 있습니다. 이 키는 축(axes)에 수직으로 그어지는 그리드 선을 커스터마이징하는 옵션을 정의합니다. </p>
+				<p>display로 차트의 그리드 선을 보이거나 숨길 수 있습니다.(초기 설정값은 true)<br>
+					그리드 선의 색상은 color를 사용해 지정할 수 있습니다.<br>
+					만약 그리드 선이 실선이 아닌 대시 기호이길 바란다면, 그 길이와 간격 값을 (gridLines 안에) borderDash로 구현 가능합니다.<br>
+					zeroLineWidth와 zeroLineColor 키를 개별로 사용해 1번째나 0번째 인덱스에 선 너비와 색상을 설정할 수 있습니다.  ?? ?? ??</p>
+				<p>scaleLabel 안에서 display 키를 써서 차트에서 척도 레이블을 보이거나 숨길 수 있습니다. (초기 설정엔 보이지 않습니다.) 여기 척도에서 보여줄 텍스트는 labelString로 명시해 줍니다. 또한, 글꼴 색상과 글꼴 집합, 크기와 스타일은 각각 fontColor, fontFamily, fontSize, fontStyle을 이용해 제어할 수 있습니다.</p>
+	
+				<div class="container" style="width: 70%;">
+					<canvas id="Chart1"></canvas>
+				</div>
+			</div>
+	
+			<div class="wrap-axes">
+				<h3>선형 척도 설정하기</h3>
+				<p>선형 척도는 수치화된 데이터를 척도로 만드는 데 사용됩니다. 대부분의 경우에 Chart.js는 자동으로 척도의 최소 및 최댓값을 감지해 나타냅니다. 사용자가 원하는 최소 및 최대값을 설정하고자 할 경우, *Axes - ticks - min&max 으로 설정할 수 있습니다. </p>
+	
+				<div class="container" style="width: 70%;">
+					<canvas id="Chart2"></canvas>
+				</div>
+			</div>
+	
+			<div class="wrap-radar">
+				<h3>방사형 선형 척도 설정하기</h3>
+				<p>이런 종류의 척도는 레이더와 극지방(polar area) 차트 용도로 쓰입니다. ??  일반적인 선형 척도와 달리 이 척도는 축으로 위치가 정해지는 대신 차트 영역을 덮어씌웁니다.</p>
+				<p>방사형 척도에서 구체적으로 표시하는 키가 많이 있습니다. 그리드 선을(원형 or 직선) 설정할 때 lineArc를 사용하면 됩니다. 방사형 기본값은 = false, 극지방 = true입니다.</p>
+				<p>angleLines - 차트 중심으로부터 점 레이블까지 퍼지는 선의 외관을 제어할 수 있습니다. 객체는 각도를 만드는 선(angle lines)의 색상과 너비를 제어하는 키를 가질 수 있습니다. 각도 선의 색상과 너비는 color와 lineWidth 키를 사용해 제어가 가능합니다.</p>
+				<p>점 레이블 모양은 pointLabels 키를 이용해 제어 가능합니다. 이 옵션은 lineArc 값이 false로 설정될 때만 효과가 있습니다. 글꼴 색상, 글꼴 집합, 크기, 스타일은 fontColor, fontFamily, fontSize, fontStyle 키를 이용해 명시하게 됩니다.</p>
+				<p>min과 max 키로 최소와 최대 크기를 설정할 수 있습니다. 크기에 관한 단계 크기(step size)와 눈금의 최대 수는 ticks하위의 stepSize와 maxTicksLimit 키를 사용합니다. ticks 안에서 이용할 수 있는 다른 몇 가지 키는 showLabelBackdrop, backdropColor, backdropPaddingX, backDropPaddingY가 있습니다. 이 옵션들은 tick 레이블 아래 있는 배경을 보이거나 숨기며, 너비와 높이, 색상을 제어할 수 있습니다.</p>
+	
+				<div class="container" style="width: 50%;">
+					<canvas id="Chart3"></canvas>
+				</div>
+			</div>
+		
+			<div class="wrap-pie">
+				<h3>도넛 차트 두개</h3>
+				<p>두개의 데이터를 동시에 다른 타입의 차트로 나타낼 수 있습니다. </p>
+				<div class="container" style="width: 50%;">
+					<canvas id="Chart4"></canvas>
+					<canvas id="Chart5"></canvas>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,26 @@
+[
+
+  {
+    "tags" : "사과",
+    "text" : "더사!과하게사!다사줄께",
+    "url" : "images/사과.jpeg"
+  }, 
+
+  {
+    "tags" : "배추",
+    "text" : "난배추널원추",
+    "url" : "images/배추.jpeg"
+  },
+
+  {
+    "tags" : "자두",
+    "text" : "자두자두보고파요",
+    "url" : "images/자두.png"
+  },
+
+  {
+    "tags" : "참외",
+    "text" : "아,참외롭다",
+    "url" : "images/참외.jpeg"
+  }
+]
